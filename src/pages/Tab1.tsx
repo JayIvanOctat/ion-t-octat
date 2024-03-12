@@ -14,7 +14,7 @@ function Example() {
 
       <IonCardContent>
       <>
-      <IonButton expand="block" color="success" id="present-alert">Click Me</IonButton>
+      <IonButton expand="block" fill="outline" color="success" id="present-alert">Click Me</IonButton>
       <IonAlert
         trigger="present-alert"
         header="A Short Title Is Best"
@@ -23,7 +23,7 @@ function Example() {
         buttons={['Action']}
       ></IonAlert>
       <>
-      <IonButton expand="block" color="success" id="open-action-sheet">Open</IonButton>
+      <IonButton expand="block" fill="outline" color="success" id="open-action-sheet">Open</IonButton>
       <IonActionSheet
         trigger="open-action-sheet"
         header="Actions"
