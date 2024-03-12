@@ -12,16 +12,8 @@ function Example() {
 
       <IonCardContent>Here's a small text description for the card content. Nothing more, nothing less.</IonCardContent>
     </IonCard>
+    
   );
-  <IonAlert>
-    <IonButton id="present-alert">Click Me</IonButton>
-      <IonAlert
-        trigger="present-alert"
-        header="A Short Title Is Best"
-        subHeader="A Sub Header Is Optional"
-        message="A message should be a short, complete sentence."
-        buttons={['Action']}
-      ></IonAlert>
-  </IonAlert>
+  
 }
 export default Example;
