@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <IonTitle size="large">Home</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <div className="ion-padding" style={{ color: 'white' }}>
+        <div className="ion-padding" style={{ color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%' }}>
           <h1>Welcome to Home Page</h1>
           <p>This is a sample content for the home page.</p>
           <IonButton expand="block" routerLink="/tab1">Go to Profile</IonButton>
