@@ -18,7 +18,7 @@ const Home: React.FC = () => {
         <div className="ion-padding">
           <h1>Welcome to Home Page</h1>
           <p>This is a sample content for the home page.</p>
-          <IonButton expand="block" routerLink="/profile">Go to Profile</IonButton>
+          <IonButton expand="block" routerLink="/tab1">Go to Profile</IonButton>
         </div>
       </IonContent>
     </IonPage>
