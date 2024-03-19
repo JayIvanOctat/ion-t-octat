@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, home, square, triangle } from 'ionicons/icons';
+import { ellipse, heart, home, square, triangle } from 'ionicons/icons';
 import Home from './pages/home';
 
 import Tab1 from './pages/Tab1';
@@ -35,6 +35,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { Profiler } from 'react';
 
 setupIonicReact();
 
@@ -70,7 +71,7 @@ const App: React.FC = () => (
             <IonLabel>Home</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon aria-hidden="true" icon={triangle} />
+            <IonIcon aria-hidden="true" icon={heart} />
             <IonLabel>Profile</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
