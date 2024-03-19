@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { ellipse, square, triangle } from 'ionicons/icons';
+import { ellipse, home, square, triangle } from 'ionicons/icons';
 import Home from './pages/home';
 
 import Tab1 from './pages/Tab1';
@@ -47,6 +47,10 @@ const App: React.FC = () => (
           <Redirect to="/home"/>
             <Tab1 />
           </Route>
+
+          <Route exact path="/home">
+            <Home />
+          </Route>
           <Route exact path="/tab1">
             <Tab1 />
           </Route>
@@ -61,9 +65,13 @@ const App: React.FC = () => (
           </Route>
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
+        <IonTabButton tab="home" href="/home">
+            <IonIcon aria-hidden="true" icon={home} />
+            <IonLabel>Home</IonLabel>
+          </IonTabButton>
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon aria-hidden="true" icon={triangle} />
-            <IonLabel>Tab 1</IonLabel>
+            <IonLabel>Profile</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">
             <IonIcon aria-hidden="true" icon={ellipse} />
